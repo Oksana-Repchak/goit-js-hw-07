@@ -1,4 +1,5 @@
-const quantityСategories = categories.children.length;
+const quantityСategories = document.querySelector('#categories').children
+  .length;
 console.log(`В списке ${quantityСategories} категории.`);
 
 const itemsEl = document.querySelectorAll('.item');
