@@ -12,6 +12,6 @@ const ingredientsListEl = document.querySelector('ul');
 const ingredientsList = ingredients.map(ingredient => {
   const listEl = document.createElement('li');
   listEl.textContent = `${ingredient}`;
-  ingredientsListEl.append(listEl);
+  return listEl;
 });
-console.log(ingredientsListEl);
+ingredientsListEl.append(...ingredientsList);
