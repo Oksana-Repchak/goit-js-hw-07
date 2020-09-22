@@ -7,9 +7,8 @@ function onInputValidLength(event) {
   if (inputVal.value.length === inputLenght) {
     inputVal.classList.remove('invalid');
     inputVal.classList.add('valid');
-  }
-
-  if (inputVal.value.length !== inputLenght && inputVal.value.length !== 0) {
+  } else {
+    inputVal.classList.remove('valid');
     inputVal.classList.add('invalid');
   }
 }
